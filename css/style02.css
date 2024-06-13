@@ -1,0 +1,95 @@
+#header {
+    display: flex;
+    align-items: center; /* アイテムを垂直方向に中央揃え */
+    justify-content: center; /* アイテムを水平方向に中央揃え */
+    width: 100%; /* ヘッダーの幅を画面全体に広げる */
+    margin: 0 auto; /* 上下のマージンを0に、自動で左右中央揃え */
+    padding: 20px 0; /* 上下にパディングを追加 */
+}
+#logo {
+    width: 120px; /* ロゴのサイズ調整 */
+    height: auto; /* 高さを自動で調整 */
+    margin-right: 5px; /* h1との間隔 */
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    background-color: #fff;
+}
+
+
+#button02{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    padding: 0; /* paddingを0に設定してflexboxの中央揃えを正確に行う */
+    font-weight: bold;
+    border: 2px solid #27acd9;
+    color: #27acd9;
+    border-radius: 100vh;
+    transition: 0.5s;
+    background-color: #fff;
+    font-size: 24px;
+}
+
+button:hover {
+    color: #fff;
+    background: #27acd9;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* 列のサイズを自動調整 */
+    gap: 20px; /* グリッドアイテム間の隙間 */
+    padding: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* コンテンツを縦方向のスペースに応じて分散 */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 24px;
+    height: 100%; /* Flexboxの高さを明確に設定する */
+}
+
+
+.grid-item img {
+    width: 100%; /* 画像をコンテナの幅に合わせる */
+    display: block; /* 不要なマージンを削除 */
+}
+
+.grid-item p {
+    padding: 10px;
+    margin: 0;
+}
+
+footer {
+    margin-top: 150px;
+    border-top: 1px solid #ccc;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}

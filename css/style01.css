@@ -1,0 +1,63 @@
+body{
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button-area {
+    width: 30%;
+    margin: 0 auto;
+}
+
+a.btn_03 {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    padding: 0; /* paddingを0に設定してflexboxの中央揃えを正確に行う */
+    font-weight: bold;
+    border: 2px solid #27acd9;
+    color: #27acd9;
+    border-radius: 100vh;
+    transition: 0.5s;
+    background-color: #fff;
+    font-size: 24px;
+}
+
+
+a.btn_03:hover {
+    color: #fff;
+    background: #27acd9;
+}
+
+
+
+#top_image{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#top{
+    width: 100%;
+}
+
+footer {
+    margin-top: 150px;
+    border-top: 1px solid #ccc;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}

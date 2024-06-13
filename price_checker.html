@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- HTMLの言語を英語に設定 -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>How to Cock Japanese Fish</title>
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="img/Logo3.webp" type="image/x-icon">
+
+</head>
+
+<body>
+  <div id="header">
+    <img id="logo" src="img/Logo3.webp" alt="">
+    <h1>How to Cock Japanese Fish</h1>
+  </div>
+  <main>
+    <div class="input-area">
+        <textarea id="fish" placeholder="Type Fish Name"></textarea>
+      <div id="input-area01"> 
+        <textarea id="fish" placeholder="DD / MM / YYYY"></textarea>
+        <textarea id="place" placeholder="Place of Origin"></textarea>
+      </div>
+      <input id="price" type="number" placeholder="Price">
+      <textarea id="remarks" placeholder="Memo"></textarea>
+      <div class="input_file">
+        <div class="preview">
+          <label for="imgFile">Select your File</label>
+          <input accept="image/*" id="imgFile" type="file">
+          <span class="select_image"></span>
+        </div>
+      <!-- </div>
+      <p id="graph_title">Toyosu Market Prices</p>
+      <div id="graph_area">
+      </div> -->
+      <textarea id="description" placeholder="Description"></textarea>
+    </div>
+
+    <div id="loading">Loading...</div>
+
+    <div class="button-area">
+      <button id="save">Save</button>
+      <button id="empty">Clear</button>
+      <button id="database" onclick="location.href='./photo_list.html'">Data</button>
+      <button id="clear">Delete</button>
+    </div>
+  </main>
+
+  <footer>
+    © 2024 Satoru Tauchi
+  </footer>
+
+  <!-- 以下にjsを書いていきます -->
+  <script src="js/fish_price_checker01.js"></script>
+  <script type="module" src="js/fish_price_checker01.js"></script>
+
+</body>
+
+</html>
